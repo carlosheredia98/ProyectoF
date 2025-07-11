@@ -36,5 +36,6 @@ Contaminantes calcularPromedio(Zona zona);
 Contaminantes promedioPonderado(Zona zona);
 int leerFloatSegura(const char *mensaje, float *valor);
 const char* nivelContaminacion(float valor, float limite);
+void ingresarDatosManual(Zona zonas[]);
 
 #endif

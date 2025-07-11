@@ -26,11 +26,12 @@ int main() {
     do {
         printf("\n===== MENU PRINCIPAL =====\n");
         printf("1. Ingresar datos actuales desde archivo\n");
-        printf("2. Mostrar estado actual\n");
-        printf("3. Predecir y emitir alertas\n");
-        printf("4. Guardar reporte\n");
-        printf("5. Cargar datos desde archivo\n");
-        printf("6. Salir\n");
+        printf("2. Ingresar datos manualmente\n");
+        printf("3. Mostrar estado actual\n");
+        printf("4. Predecir y emitir alertas\n");
+        printf("5. Guardar reporte\n");
+        printf("6. Cargar datos desde archivo\n");
+        printf("7. Salir\n");
         printf("Seleccione una opcion: ");
         scanf("%d%*c", &opcion);
 
@@ -114,27 +115,30 @@ int main() {
                 break;
             }
             case 2:
-                mostrarEstadoActual(zonas);
+                ingresarDatosManual(zonas);
                 break;
             case 3:
+                mostrarEstadoActual(zonas);
+                break;
+            case 4:
                 predecirContaminacion(zonas, predicciones);
                 emitirAlertas(zonas, predicciones);
                 generarRecomendaciones(zonas, predicciones);
                 break;
-            case 4:
+            case 5:
                 guardarReporte(zonas);
                 break;
-            case 5:
+            case 6:
                 cargarDatos(zonas);
                 printf("Datos recargados desde archivo.\n");
                 break;
-            case 6:
+            case 7:
                 printf("Saliendo del programa...\n");
                 break;
             default:
                 printf("Opcion no valida.\n");
         }
-    } while (opcion != 6);
+    } while (opcion != 7);
 
     return 0;
 }

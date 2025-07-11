@@ -258,3 +258,19 @@ void generarRecomendaciones(Zona zonas[], Contaminantes predicciones[]) {
         }
     }
 }
+
+void ingresarDatosManual(Zona zonas[]) {
+    printf("\nIngreso manual de datos actuales por zona:\n");
+    for (int i = 0; i < ZONAS; i++) {
+        printf("\nZona: %s\n", zonas[i].nombre);
+        leerFloatSegura("  CO2: ", &zonas[i].actual.CO2);
+        leerFloatSegura("  SO2: ", &zonas[i].actual.SO2);
+        leerFloatSegura("  NO2: ", &zonas[i].actual.NO2);
+        leerFloatSegura("  PM2.5: ", &zonas[i].actual.PM25);
+        leerFloatSegura("  Temperatura (C): ", &zonas[i].temperatura);
+        leerFloatSegura("  Viento (m/s): ", &zonas[i].viento);
+        leerFloatSegura("  Humedad (%%): ", &zonas[i].humedad);
+    }
+    actualizarDatosHistoricos(zonas);
+    printf("\nDatos ingresados manualmente y actualizados en datos.txt\n");
+}

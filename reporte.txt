@@ -1,0 +1,58 @@
+
+==============================
+Reporte generado el 2025-07-10 21:20
+==============================
+Zona: Norte
+  CO2=0.00 ppm SO2=0.00 ug/m3 NO2=0.00 ug/m3 PM2.5=0.00 ug/m3
+  Temp=0.0 C Viento=0.0 m/s Humedad=0.0 %
+  Promedio 30 dias: CO2=0.00 SO2=0.00 NO2=0.00 PM2.5=0.00
+
+Zona: 1001.0
+  CO2=0.00 ppm SO2=0.00 ug/m3 NO2=0.00 ug/m3 PM2.5=0.00 ug/m3
+  Temp=0.0 C Viento=0.0 m/s Humedad=0.0 %
+  Promedio 30 dias: CO2=0.00 SO2=0.00 NO2=0.00 PM2.5=0.00
+
+Zona: 998.0
+  CO2=0.00 ppm SO2=0.00 ug/m3 NO2=0.00 ug/m3 PM2.5=0.00 ug/m3
+  Temp=0.0 C Viento=0.0 m/s Humedad=0.0 %
+  Promedio 30 dias: CO2=0.00 SO2=0.00 NO2=0.00 PM2.5=0.00
+
+Zona: 995.0
+  CO2=0.00 ppm SO2=0.00 ug/m3 NO2=0.00 ug/m3 PM2.5=0.00 ug/m3
+  Temp=0.0 C Viento=0.0 m/s Humedad=0.0 %
+  Promedio 30 dias: CO2=0.00 SO2=0.00 NO2=0.00 PM2.5=0.00
+
+Zona: 993.0
+  CO2=0.00 ppm SO2=0.00 ug/m3 NO2=0.00 ug/m3 PM2.5=0.00 ug/m3
+  Temp=0.0 C Viento=0.0 m/s Humedad=0.0 %
+  Promedio 30 dias: CO2=0.00 SO2=0.00 NO2=0.00 PM2.5=0.00
+
+
+==============================
+Reporte generado el 2025-07-10 22:45
+==============================
+Zona: Norte
+  CO2=0.00 ppm SO2=0.00 ug/m3 NO2=0.00 ug/m3 PM2.5=0.00 ug/m3
+  Temp=54.0 C Viento=95.0 m/s Humedad=35.0 %
+  Promedio 30 dias: CO2=934.63 SO2=17.38 NO2=35.73 PM2.5=21.17
+
+Zona: Centro
+  CO2=0.00 ppm SO2=0.00 ug/m3 NO2=0.00 ug/m3 PM2.5=0.00 ug/m3
+  Temp=17.0 C Viento=45.0 m/s Humedad=30.0 %
+  Promedio 30 dias: CO2=922.30 SO2=18.43 NO2=35.79 PM2.5=23.81
+
+Zona: Sur
+  CO2=0.00 ppm SO2=0.00 ug/m3 NO2=0.00 ug/m3 PM2.5=0.00 ug/m3
+  Temp=50.0 C Viento=20.0 m/s Humedad=30.0 %
+  Promedio 30 dias: CO2=933.47 SO2=19.01 NO2=33.64 PM2.5=20.90
+
+Zona: Este
+  CO2=0.00 ppm SO2=0.00 ug/m3 NO2=0.00 ug/m3 PM2.5=0.00 ug/m3
+  Temp=20.0 C Viento=30.0 m/s Humedad=10.0 %
+  Promedio 30 dias: CO2=927.10 SO2=17.13 NO2=31.53 PM2.5=20.79
+
+Zona: Oeste
+  CO2=0.00 ppm SO2=0.00 ug/m3 NO2=0.00 ug/m3 PM2.5=0.00 ug/m3
+  Temp=32.0 C Viento=15.0 m/s Humedad=17.0 %
+  Promedio 30 dias: CO2=917.07 SO2=16.55 NO2=32.03 PM2.5=20.58
+

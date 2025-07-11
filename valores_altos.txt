@@ -1,0 +1,44 @@
+Ingresar datos actuales para Norte:
+  CO2: 1200
+  SO2: 30
+  NO2: 50
+  PM2.5: 35
+  Temperatura (C): 22.5
+  Viento (m/s): 1.2
+  Humedad (%%): 45
+
+Ingresar datos actuales para Centro:
+  CO2: 1150
+  SO2: 28
+  NO2: 48
+  PM2.5: 33
+  Temperatura (C): 23.0
+  Viento (m/s): 1.5
+  Humedad (%%): 42
+
+Ingresar datos actuales para Sur:
+  CO2: 1180
+  SO2: 29.5
+  NO2: 52
+  PM2.5: 37
+  Temperatura (C): 24.0
+  Viento (m/s): 1.0
+  Humedad (%%): 40
+
+Ingresar datos actuales para Este:
+  CO2: 1220
+  SO2: 31
+  NO2: 49
+  PM2.5: 36
+  Temperatura (C): 23.5
+  Viento (m/s): 1.3
+  Humedad (%%): 43
+
+Ingresar datos actuales para Oeste:
+  CO2: 1190
+  SO2: 30
+  NO2: 50
+  PM2.5: 34
+  Temperatura (C): 22.0
+  Viento (m/s): 1.4
+  Humedad (%%): 44

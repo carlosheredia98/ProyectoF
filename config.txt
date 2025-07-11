@@ -1,0 +1,6 @@
+# Limites OMS para contaminantes atmosféricos
+# Formato: valor\unidad\nombre
+1000	ppm	CO2
+20	ppm	SO2
+40	ppm	NO2
+25	ug/m3	PM2.5

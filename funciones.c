@@ -26,41 +26,48 @@ void cargarLimites() {
 }
 
 void cargarDatos(Zona zonas[]) {
+    // Abre el archivo de datos históricos para lectura
     FILE *archivo = fopen("datos.txt", "r");
     if (!archivo) {
+        // Si no existe el archivo, inicializa los valores vacíos
         printf("No se encontro datos.txt. Se iniciaran valores vacios.\n");
         return;
     }
 
-    char linea[256];
-    int zonaIndex = -1;
-    int diaIndex = 0;
+    char linea[256]; // Buffer para leer cada línea del archivo
+    int zonaIndex = -1; // Índice de la zona actual
+    int diaIndex = 0;   // Índice del día histórico actual
 
+    // Lee el archivo línea por línea
     while (fgets(linea, sizeof(linea), archivo)) {
+        // Ignora líneas de comentarios o vacías
         if (linea[0] == '#' || linea[0] == '\n') continue;
 
+        // Si la línea contiene solo el nombre de la zona, actualiza zonaIndex
         if (sscanf(linea, "%49s", zonas[zonaIndex + 1].nombre) == 1 &&
             strchr(linea, ' ') == NULL && strchr(linea, '\t') == NULL) {
             zonaIndex++;
-            diaIndex = 0;
-            if (zonaIndex >= ZONAS) break;
+            diaIndex = 0; // Reinicia el contador de días para la nueva zona
+            if (zonaIndex >= ZONAS) break; // Si ya se leyeron todas las zonas, termina
             continue;
         }
 
+        // Si la línea contiene datos, los asigna al histórico de la zona
         if (zonaIndex >= 0 && zonaIndex < ZONAS && diaIndex < DIAS_HISTORICOS) {
             if (sscanf(linea, "%f %f %f %f %f %f %f",
-                       &zonas[zonaIndex].historico[diaIndex].CO2,
-                       &zonas[zonaIndex].historico[diaIndex].SO2,
-                       &zonas[zonaIndex].historico[diaIndex].NO2,
-                       &zonas[zonaIndex].historico[diaIndex].PM25,
-                       &zonas[zonaIndex].temperatura,
-                       &zonas[zonaIndex].viento,
-                       &zonas[zonaIndex].humedad) == 7) {
-                diaIndex++;
+                       &zonas[zonaIndex].historico[diaIndex].CO2, // CO2
+                       &zonas[zonaIndex].historico[diaIndex].SO2, // SO2
+                       &zonas[zonaIndex].historico[diaIndex].NO2, // NO2
+                       &zonas[zonaIndex].historico[diaIndex].PM25, // PM2.5
+                       &zonas[zonaIndex].temperatura, // Temperatura
+                       &zonas[zonaIndex].viento,      // Viento
+                       &zonas[zonaIndex].humedad) == 7) { // Humedad
+                diaIndex++; // Avanza al siguiente día histórico
             }
         }
     }
 
+    // Cierra el archivo
     fclose(archivo);
 }
 
@@ -189,6 +196,17 @@ Contaminantes promedioPonderado(Zona zona) {
     p.SO2 /= total;
     p.NO2 /= total;
     p.PM25 /= total;
+
+    // Ajuste por variables climáticas
+    float vientoFactor = (zona.viento > 10.0) ? 0.85 : (zona.viento < 3.0 ? 1.10 : 1.0); // Viento alto reduce, bajo aumenta
+    float humedadFactor = (zona.humedad > 60.0) ? 1.15 : (zona.humedad < 30.0 ? 0.95 : 1.0); // Humedad alta aumenta
+    float tempFactor = (zona.temperatura > 30.0) ? 1.10 : (zona.temperatura < 10.0 ? 0.95 : 1.0); // Temp alta aumenta
+
+    p.CO2 = p.CO2 * vientoFactor * humedadFactor * tempFactor;
+    p.SO2 = p.SO2 * vientoFactor * humedadFactor * tempFactor;
+    p.NO2 = p.NO2 * vientoFactor * humedadFactor * tempFactor;
+    p.PM25 = p.PM25 * vientoFactor * humedadFactor * tempFactor;
+
     return p;
 }
 

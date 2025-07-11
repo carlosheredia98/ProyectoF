@@ -56,3 +56,32 @@ Zona: Oeste
   Temp=32.0 C Viento=15.0 m/s Humedad=17.0 %
   Promedio 30 dias: CO2=917.07 SO2=16.55 NO2=32.03 PM2.5=20.58
 
+
+==============================
+Reporte generado el 2025-07-11 00:45
+==============================
+Zona: Norte
+  CO2=998.00 ppm SO2=47.00 ug/m3 NO2=5.00 ug/m3 PM2.5=55.00 ug/m3
+  Temp=20.0 C Viento=14.0 m/s Humedad=10.0 %
+  Promedio 30 dias: CO2=675.50 SO2=13.24 NO2=24.97 PM2.5=15.91
+
+Zona: Centro
+  CO2=887.00 ppm SO2=5.00 ug/m3 NO2=4.00 ug/m3 PM2.5=5.00 ug/m3
+  Temp=55.0 C Viento=14.0 m/s Humedad=20.0 %
+  Promedio 30 dias: CO2=401.60 SO2=7.28 NO2=46.15 PM2.5=10.99
+
+Zona: Sur
+  CO2=999.00 ppm SO2=55.00 ug/m3 NO2=44.00 ug/m3 PM2.5=1.00 ug/m3
+  Temp=20.0 C Viento=25.0 m/s Humedad=10.0 %
+  Promedio 30 dias: CO2=425.07 SO2=13.72 NO2=22.08 PM2.5=45.82
+
+Zona: Este
+  CO2=999.00 ppm SO2=55.00 ug/m3 NO2=44.00 ug/m3 PM2.5=22.00 ug/m3
+  Temp=10.0 C Viento=3.0 m/s Humedad=10.0 %
+  Promedio 30 dias: CO2=411.97 SO2=8.64 NO2=12.84 PM2.5=40.09
+
+Zona: Oeste
+  CO2=777.00 ppm SO2=14.00 ug/m3 NO2=4.00 ug/m3 PM2.5=22.00 ug/m3
+  Temp=10.0 C Viento=25.0 m/s Humedad=20.0 %
+  Promedio 30 dias: CO2=408.07 SO2=12.00 NO2=20.45 PM2.5=46.93
+
